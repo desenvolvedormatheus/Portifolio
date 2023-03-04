@@ -1,0 +1,23 @@
+.section2{
+    height: 52rem;
+    display: flex;
+    background: var(--segundaria);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+.section2 h2{
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+.section2 div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.section2 p{
+    font-size: 1.8rem;
+    color: #fff;
+}

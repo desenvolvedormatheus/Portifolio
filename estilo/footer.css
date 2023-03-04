@@ -1,0 +1,22 @@
+/* Seta */
+@keyframes descer {
+    0%{
+        bottom: 1rem;
+    } 50% {
+        bottom: 0;
+    } 100% {
+        bottom: 1rem;
+    }
+}
+.bi-arrow-up{
+    font-size: 25pt;
+    color: var(--texto);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.3rem;
+    animation: descer 1s linear infinite;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
