@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="estilo/section1.css">
     <link rel="stylesheet" type="text/css" href="estilo/section2.css">
     <link rel="stylesheet" type="text/css" href="estilo/section3.css">
+    <link rel="stylesheet" type="text/css" href="estilo/section4.css">
     <link rel="stylesheet" type="text/css" href="estilo/footer.css">
+    <link rel="stylesheet" type="text/css" href="estilo/responsivo.css">
     <title>Portfólio</title>
 </head>
 <body>
@@ -19,73 +21,144 @@
 		<header>
 			<div class="header1">
 				<h1 title="Matheus Pereira de Souza"><b>Matheus Souza</b></h1>
-				<p>Noite</p>
-				<div class="radio">
-					<span></span>
+
+				<div class="cores">
+					
+					<input type="color" name="cor" id="cor" class="cor" value="#4A86E5">
+
+					<a class="aplicarCor">Aplicar</a>
+					
+					<p>Noite</p>
+					
+					<div class="radio">
+						<span></span>
+					</div>
 				</div>
+
 			</div>
 			<nav>
 				<ul>
 					<li><a href="#sobre">Sobre mim</a></li>
 					<li><a href="#habilidades">Habilidades</a></li>
-					<li><a href="">Projetos</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="#projetos">Projetos</a></li>
+					<li><a href="#contato">Contato</a></li>
+					<span class="fechar">X</span>
 				</ul>
+				<div class="haburguer">
+					<div class="linha"></div>
+					<div class="linha"></div>
+					<div class="linha"></div>
+				</div>
 			</nav>
 		</header>
 		<section class="section1">
 			<div class="esquerdo">
-				<lottie-player class="lapblack" src='https://assets4.lottiefiles.com/private_files/lf30_zdeFcW.json' background='transparent' speed='1' style='width: 350px; height: 350px;' loop autoplay></lottie-player>
-				<lottie-player class="lapwhite" src="https://lottie.host/39b0d298-ab00-41ee-9054-38de55325f72/bWKSTDZGoU.json" background="transparent" speed="1" style="width: 350px; height: 350px;" title="Fonte da animação https://lottiefiles.com" loop autoplay></lottie-player>
+				<lottie-player class="lapblack animacao" src='https://assets4.lottiefiles.com/private_files/lf30_zdeFcW.json' background='transparent' speed='1' style='width: 350px; height: 350px;' loop autoplay></lottie-player>
+				<lottie-player class="lapwhite animacao" src="https://lottie.host/39b0d298-ab00-41ee-9054-38de55325f72/bWKSTDZGoU.json" background="transparent" speed="1" style="width: 350px; height: 350px;" title="Fonte da animação https://lottiefiles.com" loop autoplay></lottie-player>
 			</div>
 			<div class="direito">
 				<p class="p1">OLÁ, ESSE É MEU<br>PORTIFÓLIO</p>
 				<p class="pdev">Desenvolvedor web</p>
 				<p class="p1">FRONT-END</p>
-				<button class="cv">CV-PDF</button>
+				<a class="cv" href="curriculo/Curriculo2023.pdf" download>CV-PDF</a>
 			</div>
 		</section>
 		<section class="section2" id="sobre">
 			<div>
 				<h2>sobre mim</h2>
 				<p>
-					Sou um desenvolvedor front-end em busca do meu primeiro emprego. Possuo experiência em HTML, CSS, JavaScript e frameworks populares como React e Angular, estou sempre buscando aprender mais sobre novas tecnologias e ferramentas. Sou organizado, detalhista e focado na produção de código limpo e eficiente, com habilidades em testes de unidade e integração. Estou animado para contribuir em equipes de desenvolvimento e colaborar com designers e desenvolvedores para criar soluções inovadoras e aprimorar a experiência do usuário.
+					Sou um desenvolvedor front-end em busca do meu primeiro emprego na área. Estou sempre buscando aprender mais sobre novas tecnologias e ferramentas. Sou organizado, detalhista e focado na produção de código limpo e eficiente. Estou animado para contribuir com equipes de desenvolvimento e colaborar com designers e desenvolvedores para criar soluções inovadoras e aprimorar a experiência do usuário.
 				</p>
 			</div>
-			<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_KmtjWu.json"  background="transparent"  speed="1.5"  style="width: 550px; height: 550px;"  loop  autoplay></lottie-player>
+			<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_KmtjWu.json"  background="transparent"  speed="1.5"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
 		</section>
-		
 		<section class="section3" id="habilidades">
 			<h2>Habilidades</h2>
 			<div class="habilidades">
-				<div class="icones">
-					<p>Html</p>
-					<img src="imgs/html.svg" alt="Logo Html">
+				<div class="icones"><p>Html</p><img src="imgs/html.svg" alt="Logo Html"></div>
+				<div class="icones"><p>Css</p><img src="imgs/css.svg" alt="Logo Css"></div>
+				<div class="icones"><p>JavaScript</p><img src="imgs/javascript.svg" alt="Logo JavaScript"></div>
+				<div class="icones"><p>React</p><img src="imgs/react.svg" alt="Logo React"></div>
+				<div class="icones"><p>Css in JS</p><img src="imgs/css-in-js.svg" alt="Logo css em js"></div>
+			</div>
+		</section>
+		<section class="section4" id="projetos">
+			<h2>Projetos</h2>
+			<div class="projetos">
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto calculadora">
+					<p><b>Calculadora</b></p>
+					<p>Html, css e JS</p>
+					<button>Ver Projeto</button>
 				</div>
-				<div class="icones">
-					<p>Css</p>
-					<img src="imgs/css.svg" alt="Logo Css">
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto relogio">
+					<p><b>Relogio</b></p>
+					<p>Html, css e js</p>
+					<button>Ver Projeto</button>
 				</div>
-				<div class="icones">
-					<p>JavaScript</p>
-					<img src="imgs/javascript.svg" alt="Logo JavaScript">
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto 1">
+					<p><b>nome 1</b></p>
+					<p>Html, css e js</p>
+					<button>Ver Projeto</button>
 				</div>
-				<div class="icones">
-					<p>React</p>
-					<img src="imgs/react.svg" alt="Logo React">
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto react">
+					<p><b>React</b></p>
+					<p>Html, css, js e react</p>
+					<button>Ver Projeto</button>
 				</div>
-				<div class="icones">
-					<p>Css in JS</p>
-					<img src="imgs/css-in-js.svg" alt="Logo css em js">
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto css in js">
+					<p><b>css in js</b></p>
+					<p>Html, css e js</p>
+					<button>Ver Projeto</button>
+				</div>
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto 1">
+					<p><b>nome 1</b></p>
+					<p>Html, css e js</p>
+					<button>Ver Projeto</button>
+				</div>
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto react">
+					<p><b>React</b></p>
+					<p>Html, css, js e react</p>
+					<button>Ver Projeto</button>
+				</div>
+				<div class="projeto">
+					<img src="imgs/pagina001.jpeg" alt="projeto css in js">
+					<p><b>css in js</b></p>
+					<p>Html, css e js</p>
+					<button>Ver Projeto</button>
 				</div>
 			</div>
 		</section>
-		
 		<p class="bi bi-arrow-up"></p>
-
+		<footer id="contato">
+			<h2>Contato</h2>
+			<div class="foot1">
+				<div class="foot2"> 
+					<a href="mailto:matheus.souza.smm@gmail.com" target="_blank">
+						E-mail<br>matheus.souza.smm@gmail.com
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=5511994108899&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio!" target="_blank">
+						Telefone<br>(11) 99410-8899
+					</a>
+					<a href="https://github.com/desenvolvedormatheus" target="_blank">
+						GitHub<br>https://github.com/desenvolvedormatheus
+					</a>
+					<a href="https://www.linkedin.com/in/matheus-souza-460868228/" target="_blank">
+						LinkedIn<br>https://www.linkedin.com/in/matheus-souza-460868228/
+					</a>
+				</div>
+				<div class="foot3">
+					<lottie-player class="animacao" src="https://assets2.lottiefiles.com/packages/lf20_v7gj8hb1.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+				</div>
+			</div>
+		</footer>
 	</main>
-	
-
 	<!-- Fonte das animações https://lottiefiles.com -->
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
 	<script src="scripts/animacoes.js" defer></script>

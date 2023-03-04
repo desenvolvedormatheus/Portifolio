@@ -1,22 +1,31 @@
-/* Seta */
-@keyframes descer {
-    0%{
-        bottom: 1rem;
-    } 50% {
-        bottom: 0;
-    } 100% {
-        bottom: 1rem;
-    }
+footer{
+    background: var(--fundo);
+    min-height: 52rem;
+    overflow: hidden;
 }
-.bi-arrow-up{
-    font-size: 25pt;
+footer h2{
+    font-size: 3rem;
     color: var(--texto);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 1.3rem;
-    animation: descer 1s linear infinite;
-    background: transparent;
-    border: none;
-    cursor: pointer;
+    padding: 5rem;
+}
+.foot1{
+    margin: 5rem;
+    display: flex;
+}
+.foot2{
+    justify-content: center;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.foot2 a{
+    border: 1px solid var(--segundaria);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+.foot3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

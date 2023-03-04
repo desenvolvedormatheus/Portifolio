@@ -2,6 +2,7 @@
     background: var(--fundo);
     height: 43rem;
     display: flex;
+    overflow: hidden;
 }
 .esquerdo, .direito{
     width: 50%;
@@ -15,13 +16,12 @@
 
 /* Direito */
 .direito{ flex-direction: column; }
-.p1{ text-align: center;
-    font-size: 2rem;
-}
+.p1{ text-align: center; font-size: 2rem; color: var(--texto);}
 .pdev{
     font-size: 3.5rem;
     font-family: 'Shantell Sans', cursive;
     margin-bottom: 0.8rem;
+    color: var(--texto);
 }
 .cv{
     background: var(--segundaria);
@@ -34,6 +34,7 @@
     transition: 0.1s;
 }
 .cv:hover{
+    color: #fff;
     -moz-transform: scale(1.3);
     -webkit-transform: scale(1.3);
     transform: scale(1.3);

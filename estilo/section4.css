@@ -1,0 +1,36 @@
+.section4{
+    background: var(--segundaria);
+    padding: 5rem;
+}
+.section4 h2{
+    font-size: 3rem;
+    color: #fff;
+}
+.projetos{
+    display: flex;
+    padding: 5rem;
+    gap: 7rem;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.projeto img{
+    transition: 0.1s;
+}
+.projeto img:hover{
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.projeto p{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.projeto button{
+    color: #fff;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}

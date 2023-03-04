@@ -1,0 +1,44 @@
+@media(max-width: 800px){
+    /* Geral */
+    lottie-player{
+        display: none;
+    }
+    /* Section1 */
+    .direito{
+        width: 0;
+    }
+    .pdev, .p1{
+        text-align: center;
+        width: 40rem;
+    }
+    .cv{
+        width: 8rem;
+        text-align: center;
+    }
+    /* Section2 */
+    .section2 div{
+        width: auto;
+    }    
+}
+@media(max-width: 680px){
+    /* Menu Header */
+    ul{
+        flex-direction: column;
+        background: var(--segundaria);
+        width: 20rem;
+        position: absolute;
+        right: 3rem;
+        top: -30rem; /* -30rem Menu aparece com js */
+        z-index: 3;
+        transition: 0.3s;
+    }
+    .fechar{
+        display: initial;
+    }
+    ul a:hover{
+        color: var(--fundo);
+    }
+    .haburguer{
+        display: flex;
+    }
+}
