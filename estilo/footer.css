@@ -1,31 +1,9 @@
-footer{
-    background: var(--fundo);
-    min-height: 40rem;
-    overflow: hidden;
-}
-footer h2{
-    font-size: 3rem;
-    color: var(--texto);
-    padding: 5rem;
-}
-.foot1{
-    margin: 5rem;
-    display: flex;
-}
-.foot2{
-    justify-content: center;
-    height: 20rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.foot2 a{
-    border: 1px solid var(--segundaria);
-    font-size: 1.5rem;
-    padding: 1.5rem;
-}
-.foot3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+footer{ background: var(--fundo); min-height: 40rem; overflow: hidden; }
+footer h2{ font-size: 3rem; color: var(--texto); padding: 5rem; }
+
+.foot1{ margin: 5rem; display: flex; }
+
+.foot2{ justify-content: center; height: 20rem; display: flex; flex-wrap: wrap; gap: 2rem; }
+.foot2 a{ border: 1px solid var(--segundaria); font-size: 1.5rem; padding: 1.5rem; }
+
+.foot3{ display: flex; justify-content: center; align-items: center; }

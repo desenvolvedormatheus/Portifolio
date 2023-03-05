@@ -34,7 +34,7 @@ aplicarCor.addEventListener('click', function(){
     alert('Algumas cores como preto, branco e cores fortes ou muito claras podem não dar um bom contraste, fica a seu critério')
 })
 // Btn para voltar ao topo
-const seta = document.querySelector('.bi-arrow-up')
+const seta = document.querySelector('.seta')
 seta.addEventListener('click', function(){
         window.scrollTo(0, 0);
 })

@@ -1,61 +1,29 @@
+/* Fonte importada do Google */
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,400&display=swap');
-:root{
-    --fundo: #000; 
-    --texto: #fff;
-    --segundaria: #4A86E5; /* #4A86E5 */
-}
-::-webkit-scrollbar{
-    width: 0.4rem;
-}
-::-webkit-scrollbar-thumb{
-    background: var(--segundaria);
-}
-::-webkit-scrollbar-track{
-    background: var(--fundo);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
+
+/* Cores mutaveis com js */
+:root{ --fundo: #000; --texto: #fff; --segundaria: #4A86E5; }
+
+/* Barra de navegação não disponivel em todos os navegadores */
+::-webkit-scrollbar{ width: 0.4rem; }
+::-webkit-scrollbar-thumb{ background: var(--segundaria); }
+::-webkit-scrollbar-track{ background: var(--fundo); }
+
+/* Estilos gerais da pagina */
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; } html{ scroll-behavior: smooth; }
+
 /* Seta */
-@keyframes descer {
-    0%{
-        bottom: 1rem;
-    } 50% {
-        bottom: 0;
-    } 100% {
-        bottom: 1rem;
-    }
-}
-.bi-arrow-up{
-    font-size: 25pt;
-    color: var(--texto);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 1.3rem;
-    animation: descer 1s linear infinite;
-    background: transparent;
-    border: none;
-    cursor: pointer;
+@keyframes descer { 0%{bottom: 2rem;} 50%{bottom: 1rem;} 100%{bottom: 2rem;} }
+.seta{
+    border-bottom: 1.6rem solid var(--texto); border-right: 1.6rem solid transparent; border-left: 1.6rem solid transparent;
+    position: fixed; right: 1rem;
     z-index: 2;
+    cursor: pointer;
+    animation: descer 1s linear infinite;
 }
-/* Hover das Animações */
-.animacao{
-    transition: 0.1s;
-    z-index: 1;
-    filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--segundaria));
-}
-.animacao:hover{
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-h2{
-    filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--segundaria));
-}
+/* Animações dos svgs */
+.animacao{ transition: 0.1s; z-index: 1; filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--segundaria)); }
+.animacao:hover{ -moz-transform: scale(1.3); -webkit-transform: scale(1.3); transform: scale(1.3); }
+
+/* Sombra dos subtitulos */
+h2{ filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--segundaria)); }

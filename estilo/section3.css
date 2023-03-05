@@ -1,37 +1,17 @@
 .section3{
-    min-height: 52rem;
     background: var(--fundo);
-    padding: 5rem;
+    min-height: 52rem; padding: 5rem;
 }
 .section3 h2{
-    font-size: 3rem;
-    color: var(--texto);
+    color: var(--texto); width: 100%;
     padding-bottom: 5rem;
-    width: 100%;
+    font-size: 3rem;
 }
 .habilidades{
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 3rem;
 }
-.icones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.icones p{
-    color: var(--texto);
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-.icones img{
-    height: 7rem;
-    transition: 0.1s;
-}
-.icones img:hover{
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
+.icones{ display: flex; flex-direction: column; align-items: center; }
+.icones p{ color: var(--texto); font-size: 2rem; padding: 1rem 0; }
+.icones img{ height: 7rem; transition: 0.1s; }
+.icones img:hover{ -moz-transform: scale(1.3); -webkit-transform: scale(1.3); transform: scale(1.3); }
