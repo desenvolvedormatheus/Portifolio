@@ -26,13 +26,7 @@ radio.addEventListener('click', function() {
         }
     };
 });
-// Btn segundaria do do site
-const aplicarCor = document.querySelector('.aplicarCor')
-aplicarCor.addEventListener('click', function(){
-    const caixaCor = document.querySelector('#cor').value
-    document.documentElement.style.setProperty('--segundaria', caixaCor)
-    alert('Algumas cores como preto, branco e cores fortes ou muito claras podem não dar um bom contraste, fica a seu critério')
-})
+
 // Btn para voltar ao topo
 const seta = document.querySelector('.seta')
 seta.addEventListener('click', function(){

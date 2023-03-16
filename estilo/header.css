@@ -22,12 +22,7 @@ header h1{ font-weight: 400; }
     cursor: pointer; display: none;
 }
 /* cor da pagina */
-.cores{ display: flex; align-items: center; font-size: 1rem; gap: 2rem; }
-#cor { 
-    height: 2rem; width: 2rem; cursor: pointer;
-    border: none; background-color: transparent;
-}
-.aplicarCor{ cursor: pointer; }
+.cores{ display: flex; align-items: center; }
 
 /* Botão noite e dia*/
 .radio{
