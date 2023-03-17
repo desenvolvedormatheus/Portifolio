@@ -20,6 +20,7 @@
     z-index: 2;
     cursor: pointer;
     animation: descer 1s linear infinite;
+    transition: 0.2s;
 }
 /* Animações dos svgs */
 .animacao{ transition: 0.1s; z-index: 1; filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--segundaria)); }

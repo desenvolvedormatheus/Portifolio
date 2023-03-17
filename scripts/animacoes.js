@@ -26,7 +26,6 @@ radio.addEventListener('click', function() {
         }
     };
 });
-
 // Btn para voltar ao topo
 const seta = document.querySelector('.seta')
 seta.addEventListener('click', function(){
@@ -35,13 +34,12 @@ seta.addEventListener('click', function(){
 function conferirseta(){
     let scroll = window.pageYOffset;
     if(scroll === 0){
-        seta.style.display = 'none'
+        seta.style.opacity = '0'
     } else{
-        seta.style.display = 'initial'
+        seta.style.opacity = '1'
     }
 }
 setInterval(conferirseta, 100)
-
 // Menu max-width 680px
 const menu = document.querySelector('.haburguer')
 menu.addEventListener('click', function(){
@@ -49,7 +47,6 @@ menu.addEventListener('click', function(){
     ul.style.top = '6rem'
 });
 const fecharMenu = document.querySelector('.fechar')
-
 fecharMenu.addEventListener('click', function(){  
     const ul = document.querySelector('ul')
     ul.style.top = '-30rem'
