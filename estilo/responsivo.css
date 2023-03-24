@@ -8,7 +8,9 @@
     .pdev, .p1{ 
         text-align: center; width: 40rem;
     }
-
+    header ul,a{
+        color: #fff;
+    }
     /* Section2 */
     .section2 div{ width: auto; }
 
