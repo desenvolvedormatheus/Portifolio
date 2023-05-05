@@ -1,0 +1,120 @@
+.lateralD{
+    background: #1d1d1d;
+    height: 97vh;
+    width: 20rem;
+    position: relative;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+.lateralD p{
+    color: #ffffff;
+}
+
+/* Areas gerais */
+.local, .linguagens, .frameworks, .curriculo{
+    margin: 0 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #575757;
+}
+
+/* Perfil */
+.perfil{
+    height: 14rem;
+    background: var(--fundoperfil);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.perfil p{
+    text-align: center;
+    color: var(--letras);
+}
+.nome{
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+/* Localidade e idade */
+.local{
+    display: flex;
+    justify-content: space-between;
+}
+.local p{
+    line-height: 30px;
+}
+
+/* Linguagens */
+.lingua{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.porcento{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.barra{
+    color: #414141;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+.barra::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    right: -50%;
+    animation: porcentoL 2s infinite linear reverse;
+}
+@keyframes porcentoL {
+    0%{
+        right: -50%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+/* btn do CV */
+.curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.cv{
+    color: var(--fundoperfil);
+    background: var(--letras);
+    padding: 0.5rem 1rem;
+}
+.cv:hover{
+    opacity: 0.8;
+}
+
+/* Redes sociais */
+.social{
+    font-size: 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--fundoperfil);
+    transition: 1s;
+}
+.social a{
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+}
+.social a:hover{
+    opacity: 0.8;
+}

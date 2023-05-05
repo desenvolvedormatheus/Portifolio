@@ -1,0 +1,119 @@
+.centro{
+    height: 97vh;
+    width: 100%;
+    background: var(--fundoperfil);
+    margin-right: 20rem;
+    margin-left: 4rem;
+    overflow-y: auto;
+    transition: 1s;
+    border-left: 1px solid var(--letras);
+    z-index: 0;
+}
+/* Barra de rolagem do centro */
+.centro::-webkit-scrollbar { width: 3px;}
+.centro::-webkit-scrollbar-track { background: #fff; }
+.centro::-webkit-scrollbar-thumb { border: 2px solid #575757;  /* creates padding around scroll thumb */ }
+
+.tituloSection{
+    font-size: 2.3rem;
+}
+
+/* Header */
+.centro header{
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 -0.6rem 1rem var(--letras);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sobre h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    transition: 1s;
+}
+.sobre p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 1s;
+}
+.lapblack{ display: none; }
+
+/* Projetos */
+.projetos{
+    border-bottom: 1px solid #57575748;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projeto {
+    display: flex;
+    padding-top: 2rem;
+}
+.decricaoProj{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.decricaoProj a{
+    color: var(--fundoperfil);
+    background: var(--letras);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+.decricaoProj a:hover{
+    opacity: 0.8;
+}
+/* Footer */
+.contato{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+form{
+    background: #1d1d1d;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: #fff;
+}
+input, textarea{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 12pt;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 30rem;
+    min-width: 20rem;
+    max-height: 10rem;
+    min-height: 3rem;
+    margin-bottom: 1rem;
+}
+textarea::-webkit-scrollbar { width: 3px;}
+textarea::-webkit-scrollbar-track { background: #fff; }
+textarea::-webkit-scrollbar-thumb { border: 2px solid #575757;  /* creates padding around scroll thumb */ }
+
+button[type=submit]{
+    color: var(--fundoperfil);
+    background: var(--letras);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+button[type=submit]:hover{
+    opacity: 0.8;
+}

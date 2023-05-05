@@ -1,8 +1,0 @@
-.section2{
-    background: var(--segundaria);
-    height: 52rem; padding: 5rem;
-    display: flex; justify-content: space-between; align-items: center;
-}
-.section2 h2{ color: #fff; font-size: 3rem; padding-bottom: 5rem; width: 100%; }
-.section2 div{ display: flex; flex-direction: column; width: 50%; }
-.section2 p{ font-size: 1.8rem; color: #fff; }
