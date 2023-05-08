@@ -1,0 +1,22 @@
+@media only screen and (max-width : 900px){
+    .lateralD{
+        right: -20rem;
+    }
+    .centro{
+        margin-right: 0;
+    }
+    .abrirPerfil{
+        position: initial;
+        font-size: 1.5rem;
+    }
+    .perfil h2 {
+        display: none;
+    }
+    .perfil{
+        transform: scale(0.6);
+        position: absolute;
+        left: -8rem;
+        top: -2rem;
+        background: transparent;
+    }
+}

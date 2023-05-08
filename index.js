@@ -29,9 +29,3 @@ btnMenu.addEventListener("click", ()=>{
         document.querySelector(".menu").style.paddingRight = "15rem"
     }
 })
-
-// Carregamento da pagina
-window.onload = ()=>{
-    document.querySelector("main").style.opacity = "1"
-    document.querySelector(".carregando").style.display = "none"
-}

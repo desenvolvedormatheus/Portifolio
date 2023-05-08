@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5rem;
+    transition: 1s;
 }
 .lateralD p{
     color: #ffffff;
@@ -22,6 +23,18 @@
     border-bottom: 1px solid #575757;
 }
 
+/* Abrir perfil no responsivo */
+.abrirPerfil{
+    position: absolute;
+    background: transparent;
+    border: none;
+    left: 0.5rem;
+    top: 0.5rem;
+    transform: rotate(90deg);
+    padding: 1rem;
+    color: var(--letras);
+}
+
 /* Perfil */
 .perfil{
     height: 14rem;
@@ -32,9 +45,13 @@
     align-items: center;
     transition: 1s;
 }
-.perfil p{
+.fotoPerfil{
+    transition: 1s;
+}
+.perfil h2{
     text-align: center;
     color: var(--letras);
+    font-size: 1rem;
 }
 .nome{
     font-weight: 700;
