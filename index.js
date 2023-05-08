@@ -19,14 +19,13 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
 })
 
 // Menu lateral
-document.querySelector(".btnMenu").addEventListener("click", ()=>{
+let btnMenu = document.querySelector(".btnMenu")
+btnMenu.addEventListener("click", ()=>{
     if (getComputedStyle(document.querySelector(".lateralE")).getPropertyValue("width") == "48px"){
         document.querySelector(".lateralE").style.width = "17rem"
-        // document.querySelector(".centro").style.marginLeft = "17rem"
         document.querySelector(".menu").style.paddingRight = "0rem"
     } else{
         document.querySelector(".lateralE").style.width = "4rem"
-        // document.querySelector(".centro").style.marginLeft = "4rem"
         document.querySelector(".menu").style.paddingRight = "15rem"
     }
 })
