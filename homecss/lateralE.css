@@ -16,15 +16,14 @@
     -webkit-backdrop-filter: blur(5px);
 }
 .btnMenu{
-    background: transparent;
-    color: #fff;
-    border: none;
-    padding: 1rem;
     position: absolute;
-    top: 0;
+    background: transparent;
+    border: none;
     right: 0.5rem;
-    cursor: pointer;
+    top: 0.5rem;
     transform: rotate(90deg);
+    padding: 1rem;
+    color: #fff;
 }
 .menu{
     list-style-type: none;
