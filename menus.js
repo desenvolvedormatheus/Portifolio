@@ -1,9 +1,8 @@
 // Menu lateral
 let widthJanela = window.innerWidth;
 if (widthJanela > 500){
-    let btnMenu = document.querySelector(".btnMenu")
-    btnMenu.addEventListener("click", ()=>{
-        if (getComputedStyle(document.querySelector(".lateralE")).getPropertyValue("width") == "48px"){
+    document.querySelector(".btnMenu").addEventListener("click", ()=>{
+        if (document.querySelector(".menu").style.paddingRight == "15rem"){
             document.querySelector(".lateralE").style.width = "17rem"
             document.querySelector(".menu").style.paddingRight = "0rem"
         } else{

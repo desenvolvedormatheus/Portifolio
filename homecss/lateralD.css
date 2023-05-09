@@ -33,11 +33,12 @@
     transform: rotate(90deg);
     padding: 1rem;
     color: var(--letras);
+    display: none;
 }
 
 /* Perfil */
 .perfil{
-    height: 14rem;
+    padding: 2rem 0;
     background: var(--fundoperfil);
     display: flex;
     flex-direction: column;

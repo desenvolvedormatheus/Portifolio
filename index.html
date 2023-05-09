@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="homecss/lateralE.css">
     <link rel="stylesheet" href="homecss/responsivo.css">
     <link rel="shortcut icon" href="docs/imgs/Perfil.png" type="image/x-icon">
+    <script>
+        // Carregamento da pagina
+        window.onload = ()=>{
+        document.querySelector("main").style.opacity = "1"
+        document.querySelector(".carregando").style.display = "none"}
+    </script>
     <title>Portifólio</title>
 </head>
 <body>
@@ -127,8 +133,8 @@
             </footer>
         </section>
     </main>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
-    <script src="index.js" defer></script>
-    <script src="menus.js" defer></script>
+    <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    <script type="text/javascript" src="index.js" defer></script>
+    <script type="text/javascript" src="menus.js" defer></script>
 </body>
 </html>

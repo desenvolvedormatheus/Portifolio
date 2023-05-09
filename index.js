@@ -17,8 +17,3 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
         document.querySelector(".lapwhite").style.display = "flex"
     }
 })
-// Carregamento da pagina
-window.onload = ()=>{
-    document.querySelector("main").style.opacity = "1"
-    document.querySelector(".carregando").style.display = "none"
-}

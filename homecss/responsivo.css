@@ -19,6 +19,9 @@
         top: -2rem;
         background: transparent;
     }
+    .abrirPerfil{
+        display: initial;
+    }
 }
 @media only screen and (max-width : 780px){
     .tituloSection{
@@ -45,6 +48,9 @@
         max-height: 10rem;
         min-height: 3rem;
         margin-bottom: 1rem;
+    }
+    .centro, .lateralD, .lateralE{
+        height: 90vh;
     }
 }
 @media only screen and (max-width : 400px){
