@@ -38,13 +38,18 @@
 @media only screen and (max-width : 500px){
     /* borda geral removida */
     main{ padding: 0; }
-    
-    /* header */
-    .sobre{ text-align: center; }
-    .laptop{ display: none; }
-}
-@media only screen and (max-width : 400px){
-    /* Menu lateral sobe */
+
+    /* Menu lateral direita fica full */
+    .lateralD{
+        height: 100vh;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    /* Menu lateral esquerda sobe */
     main{ flex-direction: column; }
     .lateralE{
         flex-direction: row;
@@ -58,6 +63,11 @@
     .lateralE a{ font-size: 1.5rem; }
     .lateralE li:hover{ transform: translateX(0); }
 
+    /* header */
+    .sobre{ text-align: center; }
+    .laptop{ display: none; }
+}
+@media only screen and (max-width : 400px){
     /* Projetos */
     .decricaoProj button{ font-size: 1rem; }
     .decricaoProj a{ padding: 0.5rem 1rem; }

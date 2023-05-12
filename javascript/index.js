@@ -55,7 +55,7 @@ function abrirPerfil() {
     if(lateralmenu == true){
         abrirFecharMenu()
     }
-    document.querySelector(".lateralD").style.display = "initial"
+    document.querySelector(".lateralD").style.display = "flex"
     document.querySelector(".btnAbrirPerfil").style.display = "none"
     if(document.querySelector("body").clientWidth < 600){
         document.querySelector(".centro").style.display = "none"
