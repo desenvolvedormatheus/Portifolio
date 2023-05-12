@@ -1,0 +1,75 @@
+@media only screen and (max-width : 900px){
+    /* centro */
+    .centro{ position: relative; }
+    .centro header{ height: 60vh; }
+    .projeto { flex-direction: column; }
+    .decricaoProj{ padding: 0.5rem 0; }
+}
+@media only screen and (max-width : 780px){
+    /* centro header */
+    .sobre h1{ font-size: 2rem; }
+    .sobre p{ font-size: 1rem; }
+
+    /* Lateral direita some (Muda no js) */
+    .lateralD{ display: none; }
+
+    /* Botão mostrar perfil */
+    .btnAbrirPerfil, .btnFecharPerfil{
+        background: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 10;
+    }
+    .btnAbrirPerfil img{
+        height: 3rem;
+    }
+    .bi-arrow-left {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width : 500px){
+    /* borda geral removida */
+    main{ padding: 0; }
+    
+    /* header */
+    .sobre{ text-align: center; }
+    .laptop{ display: none; }
+}
+@media only screen and (max-width : 400px){
+    /* Menu lateral sobe */
+    main{ flex-direction: column; }
+    .lateralE{
+        flex-direction: row;
+        background: var(--fundo1);
+    }
+    .btnMenu{ display: none; }
+    .menu{
+        display: flex;
+        gap: 1rem;
+    }
+    .lateralE a{ font-size: 1.5rem; }
+    .lateralE li:hover{ transform: translateX(0); }
+
+    /* Projetos */
+    .decricaoProj button{ font-size: 1rem; }
+    .decricaoProj a{ padding: 0.5rem 1rem; }
+
+    /* Contato */
+    input, textarea{
+        font-size: 1rem;
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+}
+@media only screen and (max-width : 370px){
+    /* Videos dos projetos são diminuidos */
+    video{ width: 250px; }
+}

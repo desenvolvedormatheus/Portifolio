@@ -1,21 +1,15 @@
 .centro{
-    height: 97vh;
-    width: 100%;
-    background: var(--fundoperfil);
-    margin-right: 20rem;
-    margin-left: 4rem;
+    background: var(--fundo2);
     overflow-y: auto;
-    transition: 1s;
-    border-left: 1px solid var(--letras);
-    z-index: 0;
 }
 /* Barra de rolagem do centro */
 .centro::-webkit-scrollbar { width: 3px;}
 .centro::-webkit-scrollbar-track { background: #fff; }
-.centro::-webkit-scrollbar-thumb { border: 2px solid #575757;  /* creates padding around scroll thumb */ }
+.centro::-webkit-scrollbar-thumb { border: 2px solid #575757; }
 
-.tituloSection{
-    font-size: 2.3rem;
+/* Botão mostrar perfil no responsivo*/
+.btnAbrirPerfil{
+    display: none; /* Muda no responsivo.css*/
 }
 
 /* Header */
@@ -24,8 +18,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 2rem;
-    box-shadow: 0 -0.6rem 1rem var(--letras);
+    padding: 2rem;
+    border-bottom: 1px solid #575757;
 }
 .sobre{
     display: flex;
@@ -35,14 +29,12 @@
 .sobre h1{
     font-size: 2.8rem;
     font-weight: 700;
-    transition: 1s;
 }
 .sobre p{
     font-size: 1.4rem;
     font-weight: 700;
-    transition: 1s;
 }
-.lapblack{ display: none; }
+.lapblack{ display: none; } /* Muda no js */
 
 /* Projetos */
 .projetos{
@@ -52,44 +44,47 @@
     flex-direction: column;
     gap: 2rem;
 }
+.projetos h2{ font-size: 2.3rem; }
 .projeto {
     display: flex;
-    padding-top: 2rem;
 }
-iframe{
-    height: 169px;
+video{
     width: 300px;
 }
 .decricaoProj{
-    padding: 1rem;
+    padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
+}
+.decricaoProj button{
+    font-size: 1.2rem;
+    border: none;
 }
 .decricaoProj a{
-    color: var(--fundoperfil);
+    color: var(--fundo2);
+    padding: 0.5rem 2rem;
     background: var(--letras);
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
 }
-.decricaoProj a:hover{
+.decricaoProj button:hover{
     opacity: 0.8;
 }
+
 /* Footer */
 .contato{
-    display: flex;
     padding: 2rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 form{
-    background: #1d1d1d;
+    background: var(--fundo1);
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    color: #fff;
+    color: #ffffff;
 }
 input, textarea{
     background: transparent;
@@ -97,7 +92,6 @@ input, textarea{
     color: #fff;
     padding: 0.5rem;
     font-size: 12pt;
-    outline: none;
     transition: 0.3s;
     width: 100%;
     max-width: 30rem;
@@ -108,16 +102,15 @@ input, textarea{
 }
 textarea::-webkit-scrollbar { width: 3px;}
 textarea::-webkit-scrollbar-track { background: #fff; }
-textarea::-webkit-scrollbar-thumb { border: 2px solid #575757;  /* creates padding around scroll thumb */ }
-
+textarea::-webkit-scrollbar-thumb { border: 2px solid #575757; }
 button[type=submit]{
-    color: var(--fundoperfil);
+    color: var(--fundo2);
     background: var(--letras);
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     border: none;
-    cursor: pointer;
+    margin: auto;
 }
 button[type=submit]:hover{
-    opacity: 0.8;
+    opacity: 0.7;
 }
