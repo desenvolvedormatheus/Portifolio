@@ -96,7 +96,7 @@
 .cv{
     margin: auto;
     padding: 0.5rem 1rem;
-    color: var(--fundo1);
+    color: var(--fundo2);
     background: var(--letras);
 }
 .cv:hover{
