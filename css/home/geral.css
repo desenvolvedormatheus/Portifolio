@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-weight: 200;
+    font-size: 10pt;
     color: var(--letras);
     letter-spacing: 2px;
     text-decoration: none;
@@ -23,6 +24,7 @@ body{
     height: 100vh;
     background: var(--fundo1);
     overflow: hidden;
+    display: flex;
 }
 main{
     opacity: 0;
@@ -30,6 +32,7 @@ main{
     display: flex;
     height: 100vh;
     padding: 0.5rem;
+    margin: auto;
 }
 .carregando{
     position: absolute;
