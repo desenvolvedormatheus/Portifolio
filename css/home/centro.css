@@ -1,5 +1,6 @@
 .centro{
     background: var(--fundo2);
+    height: auto;
     overflow-y: auto;
 }
 /* Barra de rolagem do centro */
@@ -27,11 +28,11 @@
     gap: 2rem;
 }
 .sobre h1{
-    font-size: 2.8rem;
+    font-size: 30pt;
     font-weight: 700;
 }
 .sobre p{
-    font-size: 1.4rem;
+    font-size: 15pt;
     font-weight: 700;
 }
 .lapblack{ display: none; } /* Muda no js */
@@ -72,33 +73,33 @@ video{
 
 /* Footer */
 .contato{
-    padding: 2rem;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+}
+.contato h2{
+    font-size: 20px;
 }
 form{
     background: var(--fundo1);
-    padding: 2rem;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 5px;
     color: #ffffff;
+    width: 600px;
 }
 input, textarea{
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
-    padding: 0.5rem;
+    padding: 10px;
     font-size: 12pt;
-    transition: 0.3s;
     width: 100%;
-    max-width: 30rem;
-    min-width: 20rem;
-    max-height: 10rem;
-    min-height: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
+    resize: none
 }
 textarea::-webkit-scrollbar { width: 3px;}
 textarea::-webkit-scrollbar-track { background: #fff; }
@@ -106,8 +107,8 @@ textarea::-webkit-scrollbar-thumb { border: 2px solid #575757; }
 button[type=submit]{
     color: var(--fundo2);
     background: var(--letras);
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+    font-size: 20px;
+    padding: 10px 20px;
     border: none;
     margin: auto;
 }

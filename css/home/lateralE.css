@@ -1,26 +1,22 @@
 .lateralE{
     background: var(--fundo1);
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-right: 1px solid var(--letras);
+    position: relative;
 }
 .btnMenu{
-    background: transparent;
-    border: none;
-    padding: 1rem;
-    color: #ffffff;
-    font-size: 1.3rem;
+    display: none;
 }
 .menu{
-    line-height: 4rem;
-    padding: 0 2rem;
-    display: none; /* Muda no js */
+    line-height: 80px;
+    padding: 0 70px;
 }
-.lateralE a{
-    font-size: 1.5rem;
-    color: #fff;
+.btnPerfil{
+    display: none;
 }
 .lateralE li:hover{
     transform: translateX(1rem);
@@ -30,9 +26,12 @@
     border: none;
     padding: 1rem;
     font-size: 1rem;
+    position: absolute;
+    bottom: 0;
 }
 .btnNoturno i, .btnMenu i{
     color: #ffffff;
+    font-size: 15pt;
 }
 .bi-moon{
     display: none;

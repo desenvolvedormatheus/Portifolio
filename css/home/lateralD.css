@@ -2,15 +2,11 @@
     background: var(--fundo2);
     width: 20rem;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-}
-
-/* Botão de fechar menu*/
-.btnFecharPerfil{
-    display: none; /* Muda no responsivo.css */
-    font-size: 1.3rem;
+    border-left: 1px solid var(--letras);
 }
 .lateralD p{
     color: #ffffff;

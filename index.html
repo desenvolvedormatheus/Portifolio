@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home/geral.css">
     <link rel="stylesheet" href="css/home/centro.css">
-    <link rel="stylesheet" href="css/home/lateralD.css">
     <link rel="stylesheet" href="css/home/lateralE.css">
+    <link rel="stylesheet" href="css/home/lateralD.css">
     <link rel="stylesheet" href="css/home/responsivo.css">
     <link rel="shortcut icon" href="docs/imgs/Perfil.png" type="image/x-icon">
     <script>
         // Carregamento da pagina
         window.onload = ()=>{
         document.querySelector("main").style.opacity = "1"
-        document.querySelector(".carregando").style.display = "none"}
+        document.querySelector(".carregando").style.display = "none"
+        }
     </script>
     <title>Portifólio</title>
 </head>
@@ -22,10 +23,10 @@
     <h1 class="carregando">Carregando...</h1>
     <main>
         <section class="lateralE">
-
             <button class="btnMenu"><i class="bi bi-arrow-right setaMenu"></i></button>
 
             <ul class="menu">
+                <li class="btnPerfil">Perfil</li>
                 <li><a href="#sobre">Home</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -38,10 +39,6 @@
 
         </section>
         <section class="centro">
-            <button class="btnAbrirPerfil">
-                <img src="docs/imgs/Perfil.png" alt="foto abrir perfil">
-                <i class="bi bi-arrow-left"></i>
-            </button>
             <header id="sobre">
                 <div class="sobre">
                     <h1>Desenvolvedor<br>Front-End</h1>
@@ -117,9 +114,6 @@
             </footer>
         </section>
         <section class="lateralD">
-            <button class="btnFecharPerfil">
-                <i class="bi bi-arrow-right"></i>
-            </button>
             <header class="perfil">
                 <img src="docs/imgs/Perfil.png" alt="Foto perfil">
                 <h2 class="nome">Matheus P. Souza</h2>
@@ -185,7 +179,6 @@
             </footer>
         </section>
     </main>
-    <p class="version">versão: <i>3.3.0</i></p>
     <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
     <script type="text/javascript" src="javascript/index.js" defer></script>
 </body>

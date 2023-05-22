@@ -1,85 +1,64 @@
-@media only screen and (max-width : 900px){
-    /* centro */
-    .centro{ position: relative; }
-    .centro header{ height: 60vh; }
-    .projeto { flex-direction: column; }
-    .decricaoProj{ padding: 0.5rem 0; }
-}
-@media only screen and (max-width : 780px){
-    /* centro header */
-    .sobre h1{ font-size: 2rem; }
-    .sobre p{ font-size: 1rem; }
-
-    /* Lateral direita some (Muda no js) */
-    .lateralD{ display: none; }
-
-    /* Botão mostrar perfil */
-    .btnAbrirPerfil, .btnFecharPerfil{
-        background: transparent;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        cursor: pointer;
-        padding: 0.5rem;
-        z-index: 10;
-    }
-    .btnAbrirPerfil img{
-        height: 3rem;
-    }
-    .bi-arrow-left {
-        font-size: 1.3rem;
-    }
-}
-@media only screen and (max-width : 500px){
-    /* borda geral removida */
-    main{ padding: 0; }
-
-    /* Menu lateral direita fica full */
-    .lateralD{
-        height: 100vh;
-    }
-    .info{
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    /* Menu lateral esquerda sobe */
-    main{ flex-direction: column; }
+@media only screen and (max-width : 1200px){
+    /* Menu */
     .lateralE{
+        grid-area: 1 / 1 / span 1 / span 2;
+        height: 5rem;
+        border-right: none;
         flex-direction: row;
-        background: var(--fundo1);
+        justify-content: space-between;
     }
-    .btnMenu{ display: none; }
     .menu{
         display: flex;
-        gap: 1rem;
+        gap: 3rem;
     }
-    .lateralE a{ font-size: 1.5rem; }
-    .lateralE li:hover{ transform: translateX(0); }
+    .btnNoturno{
+        position: initial;
+    }
 
-    /* header */
-    .sobre{ text-align: center; }
-    .laptop{ display: none; }
-}
-@media only screen and (max-width : 400px){
-    /* Projetos */
-    .decricaoProj button{ font-size: 1rem; }
-    .decricaoProj a{ padding: 0.5rem 1rem; }
+    /* Centro */
+    .centro{
+        grid-area: 2 / 1 / span 1 / span 2;
+    }
 
-    /* Contato */
-    input, textarea{
-        font-size: 1rem;
-        min-width: 15rem;
-        max-width: 20rem;
+    /* Lateral do perfil */
+    .lateralD{
+        grid-area: 1 / 3 / span 2 / span 1;
     }
 }
-@media only screen and (max-width : 370px){
-    /* Videos dos projetos são diminuidos */
-    video{ width: 250px; }
+@media only screen and (max-width : 920px){
+    /* centro */
+    .centro header{
+        height: 30rem;
+    }
+    .projetos{
+        gap: 4rem;
+    }
+    .projeto{
+        flex-direction: column;
+    }
+    .decricaoProj{
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: #ffffff;
+        width: 400px;
+    }
+    .laptop{
+        display: none;
+    }
+}
+@media only screen and (max-width : 750px){
+    /* Menu */
+    .btnPerfil{
+        display: initial;
+    }
+    .lateralD{
+        grid-area: 2 / 1 / span 1 / span 3;
+        width: 100%;
+        display: none;
+    }
 }
