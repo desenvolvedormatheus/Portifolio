@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid var(--letras);
+    border-right: 1px solid #00026d;
     position: relative;
 }
 .btnMenu{
@@ -18,8 +18,19 @@
 .btnPerfil{
     display: none;
 }
+.lateralE li{
+    cursor: pointer;
+    color: var(--letras);
+}
+.lateralE a{
+    color: var(--letras);
+    padding: 1rem;
+}
 .lateralE li:hover{
     transform: translateX(1rem);
+}
+.lateralE a:hover{
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem #00026d);
 }
 .btnNoturno{
     background: transparent;
@@ -28,9 +39,13 @@
     font-size: 1rem;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
+}
+.btnNoturno i:hover{
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem #00026d);
 }
 .btnNoturno i, .btnMenu i{
-    color: #ffffff;
+    color: var(--letras);
     font-size: 15pt;
 }
 .bi-moon{

@@ -6,10 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    border-left: 1px solid var(--letras);
+    border-left: 1px solid #00026d;
 }
 .lateralD p{
-    color: #ffffff;
+    color: var(--letras);
 }
 
 /* Perfil */
@@ -53,7 +53,7 @@
     width: 100%;
 }
 .barra{
-    color: var(--fundo2);
+    color: #00026d;
     position: relative;
     overflow: hidden;
     font-size: 1.5rem;
@@ -77,7 +77,7 @@
 
 /* maisConhecimentos */
 .maisConhecimentos{
-    border-top: #575757 1px solid;
+    border-top: #00026d 1px solid;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -96,7 +96,7 @@
     background: var(--letras);
 }
 .cv:hover{
-    opacity: 0.8;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem #00026d);
 }
 
 /* Redes sociais */
@@ -107,8 +107,11 @@
     justify-content: space-evenly;
 }
 .social a{
-    padding: 1rem 1.5rem;
+    padding: 1rem;
 }
-.social a:hover{
-    opacity: 0.7;
+.social i{
+    padding: 1rem;
+}
+.social i:hover{
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem red);
 }
