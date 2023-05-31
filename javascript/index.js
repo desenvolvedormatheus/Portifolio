@@ -5,9 +5,8 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
     
     // pegar as variaveis css
     const estilo = getComputedStyle(root)
-    const fundo1 = estilo.getPropertyValue("--fundo1")
-    const fundo2 = estilo.getPropertyValue("--fundo2")
     const letras = estilo.getPropertyValue("--letras")
+    console.log(letras)
     const largura = window.screen.width;
 
     function mudar_laptop_modo_claro(boll) {
@@ -23,15 +22,15 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
     }
 
     // modificar cores e elementos
-    if(letras == " #ffffff"){
+    if(letras == "#ffffff"){
       root.style.setProperty("--letras", "#000000")
       root.style.setProperty("--fundo2", " #ffffff")
       root.style.setProperty("--fundo1", " #cacace")
       mudar_laptop_modo_claro(true)
     } else{
-      root.style.setProperty("--letras", " #ffffff")
+      root.style.setProperty("--letras", "#ffffff")
       root.style.setProperty("--fundo2", " #111111")
-      root.style.setProperty("--fundo1", " #050505")
+      root.style.setProperty("--fundo1", " #0a0a0a")
       mudar_laptop_modo_claro(false)
     }
 })
