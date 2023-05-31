@@ -79,7 +79,12 @@
         display: none;
         padding-top: 80px;
     }
-    
+    .info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 @media only screen and (max-width : 500px){
         /* Menu */
