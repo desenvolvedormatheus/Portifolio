@@ -8,20 +8,31 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
     const fundo1 = estilo.getPropertyValue("--fundo1")
     const fundo2 = estilo.getPropertyValue("--fundo2")
     const letras = estilo.getPropertyValue("--letras")
+    const largura = window.screen.width;
+
+    function mudar_laptop_modo_claro(boll) {
+      if(largura > 920){
+        if(boll){
+          document.querySelector(".lapwhite").style.display = "none"
+          document.querySelector(".lapblack").style.display = "initial"
+        } else{
+          document.querySelector(".lapwhite").style.display = "initial"
+          document.querySelector(".lapblack").style.display = "none"
+        }
+      }
+    }
 
     // modificar cores e elementos
     if(letras == " #ffffff"){
       root.style.setProperty("--letras", "#000000")
-        document.querySelector(".lapwhite").style.display = "none"
-        document.querySelector(".lapblack").style.display = "initial"
-        root.style.setProperty("--fundo2", " #ffffff")
-        root.style.setProperty("--fundo1", " #e6e6e6")
+      root.style.setProperty("--fundo2", " #ffffff")
+      root.style.setProperty("--fundo1", " #cacace")
+      mudar_laptop_modo_claro(true)
     } else{
       root.style.setProperty("--letras", " #ffffff")
-        document.querySelector(".lapwhite").style.display = "initial"
-        document.querySelector(".lapblack").style.display = "none"
-        root.style.setProperty("--fundo2", " #111111")
-        root.style.setProperty("--fundo1", " #050505")
+      root.style.setProperty("--fundo2", " #111111")
+      root.style.setProperty("--fundo1", " #050505")
+      mudar_laptop_modo_claro(false)
     }
 })
 
@@ -29,7 +40,6 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
 let menu = document.querySelectorAll(".menu a")
 menu = [... menu].slice(1)
 
-console.log(menu)
 function alturaElemento(ancora) {
     const id = ancora.getAttribute("href")
     return document.querySelector(id).offsetTop

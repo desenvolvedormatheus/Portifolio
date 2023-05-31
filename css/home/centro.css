@@ -27,13 +27,6 @@
     font-weight: 700;
     animation: brilho infinite linear 1s;
 }
-@keyframes brilho {
-    0%{
-        filter: drop-shadow(0.5rem 0.5rem 0.3rem #00026d);
-    }90%{
-        filter: none;
-    }
-}
 .sobre p{
     font-size: 15pt;
     font-weight: 700;
@@ -48,7 +41,10 @@
     flex-direction: column;
     gap: 2rem;
 }
-.projetos h2{ font-size: 2.3rem; }
+.projetos h2{
+    font-size: 2.3rem;
+    animation: brilho infinite linear 1s;
+}
 .projeto {
     display: flex;
 }
@@ -56,9 +52,6 @@ video{
     width: 300px;
     border: 1px solid #000000;
     border-radius: 6px;
-}
-video:hover{
-    box-shadow: 0.1rem 0.1rem 0.5rem #00026d;
 }
 .decricaoProj{
     padding: 0 0.5rem;
@@ -77,8 +70,8 @@ video:hover{
     border-radius: 6px;
 }
 .decricaoProj a:hover{
-    color: #00026d;
-    background: #ffffff;
+    color: var(--letras);
+    background: var(--fundo1);
     box-shadow: 0.2rem 0.2rem 0.5rem #00026d;
 }
 /* Footer */
@@ -98,8 +91,10 @@ form{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    color: var(--letras);
     width: 600px;
+}
+form label{
+    color: var(--letras);
 }
 input, textarea{
     background: transparent;

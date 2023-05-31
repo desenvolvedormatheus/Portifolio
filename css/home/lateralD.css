@@ -19,6 +19,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow:
+    0 1rem 1rem -1rem #00026d46;
+    z-index: 1;
 }
 .perfil h2{
     text-align: center;
@@ -35,6 +38,10 @@
     background: var(--fundo1);
     padding: 0.7rem;
     overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .info::-webkit-scrollbar { width: 3px;}
 .info::-webkit-scrollbar-track { background: #fff; }
@@ -105,6 +112,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 -1rem 1rem -1rem #00026d46;
+    z-index: 1;
 }
 .social a{
     padding: 1rem;
@@ -113,5 +122,5 @@
     padding: 1rem;
 }
 .social i:hover{
-    filter: drop-shadow(0.3rem 0.3rem 0.5rem red);
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem #00026d);
 }

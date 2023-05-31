@@ -11,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-weight: 200;
+    font-weight: 700;
     font-size: 10pt;
     color: var(--letras);
     letter-spacing: 2px;
@@ -25,6 +25,7 @@ body{
     background: var(--fundo1);
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .carregando{
     position: absolute;
@@ -37,10 +38,19 @@ body{
     height: 100px;
     animation: fantasma infinite 2s;
 }
-@keyframes fantasma{
+/* keyframe Carregamento da pagina */
+@keyframes fantasma{ 
     0%{ opacity: 1; }
     50%{ opacity: 0; }
     100%{ opacity: 1; }
+}
+/* Keyframe ( centro h1, projetos h2)*/
+@keyframes brilho {
+    0%{
+        filter: drop-shadow(0.5rem 0.5rem 0.3rem #00026d);
+    }90%{
+        filter: none;
+    }
 }
 main{
     height: 100vh;
