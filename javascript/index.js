@@ -26,7 +26,10 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
 })
 
 // Scroll suave
-const menu = document.querySelectorAll(".menu a")
+let menu = document.querySelectorAll(".menu a")
+menu = [... menu].slice(1)
+
+console.log(menu)
 function alturaElemento(ancora) {
     const id = ancora.getAttribute("href")
     return document.querySelector(id).offsetTop
@@ -67,16 +70,21 @@ function smoothScrollTo(endY, duration) {
 
 // Perfil mobile
 document.querySelector(".btnPerfil").addEventListener("click", ()=>{
-  const itens = document.querySelectorAll(".menu a")
-  if(document.querySelector(".lateralD").style.display != "flex"){
-    document.querySelector(".lateralD").style.display = "flex"
-    itens.forEach((item) =>{
+  const lateralD = document.querySelector(".lateralD")
+  let itens = document.querySelectorAll(".menu a")
+  itens = [... itens].slice(1)
+
+  if(lateralD.style.display != "flex"){
+    lateralD.style.display = "flex"
+
+    itens.forEach(item =>{
       item.style.display = "none"
     })
   } else{
-    document.querySelector(".lateralD").style.display = "none"
-    itens.forEach((item) =>{
+    lateralD.style.display = "none"
+    itens.forEach(item =>{
       item.style.display = "flex"
     })
   }
-} )
+
+})
