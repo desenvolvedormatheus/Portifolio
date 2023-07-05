@@ -5,6 +5,7 @@
     --fundo1: #0a0a0a;
     --fundo2: #111111;
     --letras:#ffffff;
+    --principal: #00026d;
 }
 *{
     padding: 0;
@@ -43,14 +44,6 @@ body{
     0%{ opacity: 1; }
     50%{ opacity: 0; }
     100%{ opacity: 1; }
-}
-/* Keyframe ( centro h1, projetos h2)*/
-@keyframes brilho {
-    0%{
-        filter: drop-shadow(0.5rem 0.5rem 0.3rem #00026d);
-    }90%{
-        filter: none;
-    }
 }
 main{
     height: 100vh;

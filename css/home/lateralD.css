@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    border-left: 1px solid #00026d;
+    border-left: 1px solid var(--principal);
 }
 .lateralD p{
     color: var(--letras);
@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1rem 1rem -1rem #00026d46;
+    box-shadow: 0 1rem 1rem -1rem var(--principal)46;
     z-index: 1;
 }
 .perfil h2{
@@ -55,7 +55,7 @@
     width: 100%;
 }
 .barra{
-    color: #00026d;
+    color: var(--principal);
     position: relative;
     overflow: hidden;
     font-size: 1.5rem;
@@ -79,7 +79,7 @@
 
 /* maisConhecimentos */
 .maisConhecimentos{
-    border-top: #00026d 1px solid;
+    border-top: var(--principal) 1px solid;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -98,7 +98,7 @@
     background: var(--letras);
 }
 .cv:hover{
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem #00026d);
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--principal));
 }
 
 /* Redes sociais */
@@ -107,7 +107,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0 -1rem 1rem -1rem #00026d46;
+    box-shadow: 0 -1rem 1rem -1rem var(--principal)46;
     z-index: 1;
 }
 .social a{
@@ -117,5 +117,5 @@
     padding: 1rem;
 }
 .social i:hover{
-    filter: drop-shadow(0.3rem 0.3rem 0.5rem #00026d);
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem var(--principal));
 }

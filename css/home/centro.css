@@ -15,7 +15,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    border-bottom: 1px solid #00026d;
+    border-bottom: 1px solid var(--principal);
 }
 .sobre{
     display: flex;
@@ -25,17 +25,16 @@
 .sobre h1{
     font-size: 30pt;
     font-weight: 700;
-    animation: brilho infinite linear 1s;
 }
 .sobre p{
     font-size: 15pt;
     font-weight: 700;
 }
 .lapblack{ display: none; } /* Muda no js */
-.laptop{ filter: drop-shadow(0 0 0.1rem #00026d); }
+.laptop{ filter: drop-shadow(0 0 0.1rem var(--principal)); }
 /* Projetos */
 .projetos{
-    border-bottom: 1px solid #00026d;
+    border-bottom: 1px solid var(--principal);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -43,7 +42,6 @@
 }
 .projetos h2{
     font-size: 2.3rem;
-    animation: brilho infinite linear 1s;
 }
 .projeto {
     display: flex;
@@ -72,7 +70,7 @@ video{
 .decricaoProj a:hover{
     color: var(--letras);
     background: var(--fundo1);
-    box-shadow: 0.2rem 0.2rem 0.5rem #00026d;
+    box-shadow: 0.2rem 0.2rem 0.5rem var(--principal);
 }
 /* Footer */
 .contato{
@@ -98,7 +96,7 @@ form label{
 }
 input, textarea{
     background: transparent;
-    border: 1px solid #00026d;
+    border: 1px solid var(--principal);
     border-radius: 6px;
     color: var(--letras);
     padding: 10px;
@@ -124,7 +122,7 @@ button[type=submit]{
     border-radius: 6px;
 }
 button[type=submit]:hover{
-    color: #00026d;
+    color: var(--principal);
     background: #ffffff;
-    box-shadow: 0.1rem 0.1rem 0.5rem #00026d;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--principal);
 }

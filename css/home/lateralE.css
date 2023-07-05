@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #00026d;
+    border-right: 1px solid var(--principal);
     position: relative;
 }
 .menu{
