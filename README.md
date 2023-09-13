@@ -24,6 +24,36 @@ Esse projeto tem como principal objetivo criar uma presença online profissional
 
 O portfólio foi cuidadosamente planejado para oferecer uma experiência de usuário excepcional e dinâmico. O design é moderno e responsivo, garantindo que o portfólio seja acessível em dispositivos móveis e computadores. Alem de ser inovador em designer que não foi inspirado em outros projetos.
 
+### Full size
+
+**Menu lateral à esquerda fixo**
+- links de cada parte do site
+- Mudança entre modo claro e noturno feito com variaveis-CSS e JavasCript
+
+**Menu lateral à direita fixo**
+- Foto e nome.
+- Linguagens e suas respectivas porcentagens de dominio.
+- Lista de ferramentas e tecnologias.
+- Lista de frameworks.
+- Botão do curriculo link do download.
+- Lista de redes com icones clicaveis, linkedIn, github e e-mail.
+
+_O menu lateral direito possui scroll pois futuras adições serão feitas cousando sua necessidade._
+
+**Centro da pagina**
+- Parte inicial com titulo e breve apresentação
+
+- Area de projetos
+  - Nome do projeto
+  - Linguagens e dominio sobre
+  - Tecnologias habilidades e frameworks
+ 
+- Area de contato
+  - Nome, email e mensagem é enviado diretamente pra mim.
+
+![print do topo da pagina.](https://github.com/desenvolvedormatheus/Portifolio/blob/main/docs/readme/portifolioImg.png)
+
+
 ## Tecnologias utilizadas
 
 - HTML, CSS e JavaScript para a construção do site.
@@ -35,3 +65,13 @@ Após a conclusão do projeto, estarei sempre mantendo atualizado com meus proje
 Além disso, considero aprimorar e expandir meu portfólio à medida que adquiro novas habilidades e realizações na carreira de desenvolvimento Full-stack.
 
 ## Autor
+
+**Matheus P. Souza**
+
+[E-mail](mailto:desenvolvedormatheus.dev@gmail.com).
+
+[linkedIn](https://www.linkedin.com/in/matheus-souza-460868228/).
+
+
+
+
