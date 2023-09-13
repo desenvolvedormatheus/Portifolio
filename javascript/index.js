@@ -24,7 +24,7 @@ document.querySelector(".btnNoturno").addEventListener("click", ()=>{
     // modificar cores e elementos
     if(letras == "#ffffff"){
       root.style.setProperty("--letras", "#000000")
-      root.style.setProperty("--fundo1", " #cacace")
+      root.style.setProperty("--fundo1", " #eeeeee")
       root.style.setProperty("--fundo2", " #ffffff")
       mudar_laptop_modo_claro(true)
     } else{
