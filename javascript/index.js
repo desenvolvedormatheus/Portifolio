@@ -97,3 +97,11 @@ document.querySelector(".btnPerfil").addEventListener("click", ()=>{
   }
 
 })
+
+// Auto play dos videos 
+const video = document.getElementById('tagVideo');
+
+video.muted = true;
+video.loop = true;
+video.currentTime = 10;
+video.play();
